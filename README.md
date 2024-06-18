@@ -1,6 +1,9 @@
 <div align="center">
  <img alt="ollama" height="200px" src="https://github.com/ollama/ollama/assets/3325447/0d0b44e2-8f4a-4e99-9b52-a5c1c741c8f7">
 </div>
+This document provides a step-by-step guide to using Ollama, a powerful tool for interacting with
+large language models (LLMs). We'll cover the installation process, how to use the Ollama API with
+Curl.
 
 # Ollama
 
@@ -57,10 +60,8 @@ Here are some example models that can be downloaded:
 | LLaVA              | 7B         | 4.5GB | `ollama run llava`             |
 | Solar              | 10.7B      | 6.1GB | `ollama run solar`             |
 
-
-This document provides a step-by-step guide to using Ollama, a powerful tool for interacting with
-large language models (LLMs). We'll cover the installation process, how to use the Ollama API with
-Curl, and explore the differences between two popular models: Llama3 and Gemma:2b.
+## Selected Models
+The models Llama3 and Gemma:2b are used in this document and explore the differences between two popular models: Llama3 and Gemma:2b.
 
 
 
