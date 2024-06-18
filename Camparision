@@ -1,0 +1,35 @@
+Responses :
+
+{"model":"llama3","created_at":"2024-06-18T03:02:51.33899Z","response":"The capital city
+ of Canada is Ottawa.", "done":true,"done_reason":"stop","context":[128006,882,128007,271,
+ 3923,374,279,6864,3363,315,7008,30,128009,128006,78191,128007,271,791,6864,3363,315,7008,
+ 374,33266,13,128009],"total_duration":13490789417,"load_duration":12652716959,
+ "prompt_eval_count":18,"prompt_eval_duration":285368000,"eval_count":9,
+ "eval_duration":533167000}
+
+
+{"model":"gemma:2b","created_at":"2024-06-18T03:07:50.085335Z","response":"The capital 
+city of Canada is Ottawa.\n\nOttawa is the political, economic, and cultural center of 
+Canada. It is also the seat of the Canadian government and Parliament.","done":true,
+"done_reason":"stop","context":[968,2997,235298,559,235298,15508,235313,1645,108,1841,
+603,573,6037,3413,576,6591,181537,615,235298,559,235298,15508,235313,108,235322,2997,
+235298,559,235298,15508,235313,2516,108,651,6037,3413,576,6591,603,38812,235265,109,
+94562,603,573,6269,235269,6578,235269,578,10831,5086,576,6591,235265,1165,603,1170,573,
+10250,576,573,14216,3838,578,17685,35606,615,235298,559,235298,15508,235313,108],
+"total_duration":4926832625,"load_duration":3903678875,"prompt_eval_count":34,
+"prompt_eval_duration":155507000,"eval_count":35,"eval_duration":864838000}
+
+
+
+•	"llama3" Model:
+o	Provides a concise response: "The capital city of Canada is Ottawa."
+o	Contains fewer additional details and context data (context, total_duration, etc.).
+o	Suitable if you need a straightforward answer without extra elaboration.
+•	"gemma:2b" Model:
+o	Offers a more detailed response that includes additional information about Ottawa being the political, economic, and cultural center of Canada, as well as the seat of the Canadian government and Parliament.
+o	Includes more context data (context, total_duration, etc.) which might be useful for debugging or understanding the response generation process.
+o	Ideal if you require a more comprehensive answer that provides background information along with the direct answer.
+Choosing the Better Response:
+•	For Simple Queries: If your application typically needs straightforward answers without additional context or details, the response from the "llama3" model might be sufficient and cleaner.
+•	For Detailed Information: If your application benefits from richer responses with additional context or background information, the response from the "gemma:2b" model would be more appropriate.
+

@@ -1,0 +1,49 @@
+The Ollama API provides a powerful way to interact with LLMs using Curl. This section will guide you through the process.
+
+
+You can find detailed documentation on the Ollama API at
+[https://github.com/ollama/ollama/blob/main/docs/api.md#generate-a-completion]
+(https://github.com/ollama/ollama/blob/main/docs/api.md#generate-a-completion).
+
+
+To use Curl, follow these steps:
+1. Open your terminal.
+Write a Curl command. For example, to make a request (without streaming), you can use the
+following command:
+----------------------------------------------------------------------
+###Curl
+
+curl http://localhost:11434/api/generate -d '{
+  "model": "llama3",
+  "prompt": "What is the capital city of Canada?",
+  "stream": false
+}'
+
+
+Each line mean:
+
+•	curl: Initiates a HTTP request to the specified URL.
+•	http://localhost:11434/api/generate: Specifies the URL where the request is sent. In this case, it's http://localhost:11434/api/generate, which is typically a local server running on your machine (localhost) on port 11434.
+•	-d: Specifies that the following string is the data to be sent with the POST request.
+•	'{ ... }': This JSON string contains the data payload for the request. It includes:
+o	"model": "llama3": Specifies the model to use for generating the response. In this case, it's using the llama3 model.
+o	"prompt": "What is the capital city of Canada?": Provides the input prompt for the model. The model will generate a response based on this prompt.
+o	"stream": false: Indicates whether to stream the response or get it all at once (false means get it all at once)
+--------------------------------------------------------------------
+###Response
+
+The response which include:
+•	"model": "llama3": Specifies the model used.
+•	"created_at": "2024-06-17T17:36:58.761975Z": Timestamp of when the response was generated.
+•	"response": "The capital city of Canada is Ottawa.": The generated response based on the prompt.
+•	"done": true: Indicates that the response generation is complete.
+•	"done_reason": "stop": Reason for completing the response.
+•	"context": Internal details related to the response generation process.
+•	"total_duration", "load_duration", "prompt_eval_count", "prompt_eval_duration": Metrics related to how long it took to generate the response and evaluate the prompt.
+-----------------------------------------------------------------------
+{"model":"llama3","created_at":"2024-06-18T03:02:51.33899Z","response":"The capital city of Canada is Ottawa.","done"
+,"done_reason":"stop","context":[128006,882,128007,271,3923,374,279,6864,3363,315,7008,30,128009,128006,78191,128007,271,791,6864,3363,315,7008,374,33266,13,128009],"total_duration":13490789417,"load_duration":12652716959,"prompt_eval_count":18,"prompt_eval_duration":285368000,"eval_count":9,"eval_duration":533167000}% (base) shbol(base) shbolboli@s(base) shbol(base)(base) shbolboli@shs-Mac(base) shbol(base)(base)" or "(base) shbolboli@shs-MacBook-Air ~ % curl http://localhost:11434/api/generate -d '{
+"model": "gemma:2b",
+"prompt": "What is the capital city of Canada?",
+"stream": false
+}'
