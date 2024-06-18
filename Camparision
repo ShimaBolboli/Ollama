@@ -21,15 +21,26 @@ Canada. It is also the seat of the Canadian government and Parliament.","done":t
 
 
 
-•	"llama3" Model:
+###	"llama3" Model
 o	Provides a concise response: "The capital city of Canada is Ottawa."
 o	Contains fewer additional details and context data (context, total_duration, etc.).
 o	Suitable if you need a straightforward answer without extra elaboration.
-•	"gemma:2b" Model:
-o	Offers a more detailed response that includes additional information about Ottawa being the political, economic, and cultural center of Canada, as well as the seat of the Canadian government and Parliament.
-o	Includes more context data (context, total_duration, etc.) which might be useful for debugging or understanding the response generation process.
-o	Ideal if you require a more comprehensive answer that provides background information along with the direct answer.
+
+
+###	"gemma:2b" Model
+   o	Offers a more detailed response that includes additional information about Ottawa being the political, economic, 
+     and cultural center of Canada, as well as the seat of the Canadian government and Parliament.
+
+   o	Includes more context data (context, total_duration, etc.) which might be useful for debugging or understanding 
+     the response generation process.
+
+   o	Ideal if you require a more comprehensive answer that provides background information along with the direct 
+     answer.
+
 Choosing the Better Response:
+------------------------------
+
 •	For Simple Queries: If your application typically needs straightforward answers without additional context or details, the response from the "llama3" model might be sufficient and cleaner.
+
 •	For Detailed Information: If your application benefits from richer responses with additional context or background information, the response from the "gemma:2b" model would be more appropriate.
 
