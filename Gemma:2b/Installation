@@ -3,7 +3,10 @@ Another popular LLM available through Ollama is Gemma:2b. You can install and ru
 
 following commands:
 
-Run Gemma:2b using 
+Run Gemma:2b using
+
+
 ```
 ollama run gemma:2b
 ```
+
