@@ -60,7 +60,7 @@ Here are some example models that can be downloaded:
 | LLaVA              | 7B         | 4.5GB | `ollama run llava`             |
 | Solar              | 10.7B      | 6.1GB | `ollama run solar`             |
 
-## Different Models
+## Different LLm Model
 
 
 <div align="center">
@@ -68,11 +68,13 @@ Here are some example models that can be downloaded:
 </div>
 
 <h2>GPt Neo</h2>
+
 GPT-Neo, a variant of the GPT family developed by EleutherAI, as our different large language model (LLM). GPT-Neo is known for being highly configurable and efficient, making it suitable for running on local machines. Here’s how you can set up and demonstrate GPT-Neo's functionality locally using curl.
 
 ---------------------------------------------------------------------
-The steps need to run on local machine:
-1-Installation on Mac OS
+The steps need to run on the local machine:
+
+## 1-Installation on Mac OS
 
 GPT-Neo can be installed via the Hugging Face Transformers library, which provides an easy interface to interact with various language models.
 •	First, ensure you have Python installed on your machine. You can download it from python.org or use a package manager like Homebrew.
@@ -87,20 +89,21 @@ brew install python
 pip install torch==1.10.0+cpu torchvision==0.11.1+cpu torchaudio===0.10.0+cpu -f https://download.pytorch.org/whl/cpu/torch_stable.html
 pip install transformers
 ```
-2- Download and Load GPT-Neo Model
+## 2- Download and Load GPT-Neo Model
 Use the Hugging Face Transformers library to load the GPT-Neo model and tokenizer. GPT-Neo models come in various sizes; for demonstration, we'll use EleutherAI/gpt-neo-1.3B, which is a smaller variant compared to larger models like GPT-3.
 
 •	Create a Python script (gpt_neo.py) to serve the model
 
 Demonstrating Functionality via curl
 -----------------------------------------------------------------------
-1-Set Up a Server to Serve GPT-Neo
+## 1-Set Up a Server to Serve GPT-Neo
 Typically, for local interaction via curl, you'd need to set up a simple server that listens for HTTP requests and processes them using the loaded GPT-Neo model. We'll use Python and Flask for this purpose.
 •	Create a Python script (gpt_neo_server.py) to serve the model
 
-2- Open a terminal, navigate to the directory where gpt_neo_server.py is saved, and run the server
+## 2- Run code
+Open a terminal, navigate to the directory where gpt_neo_server.py is saved, and run the server
 
-3- Interact with GPT-Neo via curl
+## 3- Interact with GPT-Neo via curl
 Now, simulate interaction with the GPT-Neo model server using curl in another terminal window:
 
 ```
@@ -108,10 +111,11 @@ curl -X POST -H "Content-Type: application/json" -d '{"text": "Where is the Capi
 
 ```
 
-4- expected output 
+## 4- Expected output 
 
-
+/////////////////////////
 {"response":"where is the capital city of Canada?\n\nA:\n\nThe capital city of Canada is Ottawa.\n\nA:\n\nThe capital city of Canada is Ottawa.\n\nA:\n\nThe capital city of Canada is Ottawa.\n\nA:\n\nThe capital city of Canada is Ottawa.\n\nA:\n\nThe capital city of Canada is Ottawa.\n\nA:\n\nThe capital city of Canada is Ottawa.\n\nA:\n\nThe capital"}
+/////////////////////////
 
 The generated text will vary based on the prompt provided and the response from the GPT-Neo model.
 
