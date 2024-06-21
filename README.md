@@ -58,8 +58,10 @@ Here are some example models that can be downloaded:
 | Code Llama         | 7B         | 3.8GB | `ollama run codellama`         |
 | Llama 2 Uncensored | 7B         | 3.8GB | `ollama run llama2-uncensored` |
 | LLaVA              | 7B         | 4.5GB | `ollama run llava`             |
-| Solar              | 10.7B      | 6.1GB | `ollama run solar`             |
+| Solar              | 10.7B      | 6.1GB | `ollama run solar`           |
 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
 ## Different LLm Model
 
 
@@ -113,9 +115,9 @@ curl -X POST -H "Content-Type: application/json" -d '{"text": "Where is the Capi
 
 ## 4- Expected output 
 
-/////////////////////////
+____________________________________________________________________
 {"response":"where is the capital city of Canada?\n\nA:\n\nThe capital city of Canada is Ottawa.\n\nA:\n\nThe capital city of Canada is Ottawa.\n\nA:\n\nThe capital city of Canada is Ottawa.\n\nA:\n\nThe capital city of Canada is Ottawa.\n\nA:\n\nThe capital city of Canada is Ottawa.\n\nA:\n\nThe capital city of Canada is Ottawa.\n\nA:\n\nThe capital"}
-/////////////////////////
+_____________________________________________________________________
 
 The generated text will vary based on the prompt provided and the response from the GPT-Neo model.
 
