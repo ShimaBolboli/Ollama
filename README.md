@@ -60,8 +60,10 @@ Here are some example models that can be downloaded:
 | LLaVA              | 7B         | 4.5GB | `ollama run llava`             |
 | Solar              | 10.7B      | 6.1GB | `ollama run solar`             |
 
-## Selected Models
-The models Llama3 and Gemma:2b are used in this document and explore the differences between two popular models: Llama3 and Gemma:2b.
+## Different Models
 
 
+<div align="center">
+ <img alt="GPTNeo" height="200px" src="[https://github.com/ollama/ollama/assets/3325447/0d0b44e2-8f4a-4e99-9b52-a5c1c741c8f7](https://huggingface.co/front/assets/huggingface_logo-noborder.svg)">
+</div>
 
